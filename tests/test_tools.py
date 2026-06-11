@@ -2,7 +2,7 @@
 
 import pytest
 
-from shellai.tools import Toolbox
+from aishell.tools import Toolbox
 
 
 def _approve_all(summary, detail):

@@ -1,12 +1,12 @@
-# Contributing to ShellAI
+# Contributing to AiShell
 
-Thanks for your interest in making ShellAI better! 🐚
+Thanks for your interest in making AiShell better! 🐚
 
 ## Getting started
 
 ```bash
-git clone https://github.com/djaferiurim/shellai
-cd shellai
+git clone https://github.com/djaferiurim/aishell
+cd aishell
 pip install -e ".[dev]"
 pytest          # make sure the suite is green
 ```
@@ -14,7 +14,7 @@ pytest          # make sure the suite is green
 ## Project layout
 
 ```
-src/shellai/
+src/aishell/
   cli.py          # Typer commands & entry point
   config.py       # config loading / persistence
   providers.py    # LLM backends (OpenAI, Ollama, Anthropic, Groq, Gemini)
@@ -39,7 +39,7 @@ tests/            # pytest suite
 
 ## Guidelines
 
-- Keep dependencies minimal — ShellAI's appeal is being lightweight.
+- Keep dependencies minimal — AiShell's appeal is being lightweight.
 - Match the existing style (type hints, short docstrings, `rich` for output).
 - New network calls should fail gracefully with a clear, actionable message.
 - Anything that writes files or runs commands must respect the approval flow.

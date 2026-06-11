@@ -2,8 +2,8 @@
 
 import pytest
 
-from shellai.config import Config
-from shellai.providers import (
+from aishell.config import Config
+from aishell.providers import (
     AnthropicProvider,
     GeminiProvider,
     GroqProvider,

@@ -22,6 +22,6 @@ htmlcov/
 .idea/
 .DS_Store
 
-# ShellAI local data (in case run from repo)
+# AiShell local data (in case run from repo)
 sessions/
 config.json

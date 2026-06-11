@@ -1,7 +1,7 @@
-"""Render a polished terminal-session demo GIF for ShellAI.
+"""Render a polished terminal-session demo GIF for AiShell.
 
 This is a self-contained renderer (Pillow only) used to produce ``demo.gif``
-for the README. It animates typed commands and representative ShellAI output
+for the README. It animates typed commands and representative AiShell output
 in a Catppuccin-Mocha terminal — no headless browser or recorder required.
 
 Usage:
@@ -57,7 +57,7 @@ Line = list
 
 
 def prompt_segs() -> Line:
-    return [("PS ", SUBTLE), ("~/shellai", BLUE), ("> ", GREEN)]
+    return [("PS ", SUBTLE), ("~/aishell", BLUE), ("> ", GREEN)]
 
 
 class Term:
@@ -116,7 +116,7 @@ def build() -> Term:
     t = Term()
 
     # intro comment
-    t.lines.append([("# ShellAI - chat with any LLM from your terminal", COMMENT)])
+    t.lines.append([("# AiShell - chat with any LLM from your terminal", COMMENT)])
     t._emit()
 
     # 1) one-shot question
@@ -145,7 +145,7 @@ def build() -> Term:
         [("→ ", BLUE), ("write_file ", BLUE), ("hello.py", FG)],
         [("  ✓ wrote 1 file", GREEN)],
         [("→ ", BLUE), ("run_command ", BLUE), ("python hello.py", FG)],
-        [("  Hello from ShellAI!", FG)],
+        [("  Hello from AiShell!", FG)],
         [("✓ ", GREEN), ("done  ", GREEN), ("Created and ran hello.py.", FG)],
     ], per_line=3)
     t.blank()
@@ -155,9 +155,9 @@ def build() -> Term:
     t.print_lines([
         [("Indexed ", FG), ("README.md", CYAN), (" - 12 chunks embedded.", FG)],
     ])
-    t.type_command('ai ask "which providers does ShellAI support?"')
+    t.type_command('ai ask "which providers does AiShell support?"')
     t.print_lines([
-        [("ShellAI supports ", FG), ("Ollama", YELLOW), (", ", FG), ("OpenAI", YELLOW),
+        [("AiShell supports ", FG), ("Ollama", YELLOW), (", ", FG), ("OpenAI", YELLOW),
          (", ", FG), ("Groq", YELLOW), (",", FG)],
         [("Gemini", YELLOW), (", and ", FG), ("Anthropic", YELLOW), (".", FG)],
         [("sources: ", SUBTLE), ("README.md", BLUE)],

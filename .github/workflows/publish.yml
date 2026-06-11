@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/p/shellai
+      url: https://pypi.org/p/aishell-cli
     permissions:
       id-token: write  # for trusted publishing (no API token needed)
     steps:

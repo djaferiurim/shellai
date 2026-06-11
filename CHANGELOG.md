@@ -29,5 +29,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Test suite (pytest), GitHub Actions CI matrix, PyPI publish workflow, demo
   tape, and contributing guide.
 
-[Unreleased]: https://github.com/djaferiurim/shellai/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/djaferiurim/shellai/releases/tag/v0.1.0
+[Unreleased]: https://github.com/djaferiurim/aishell/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/djaferiurim/aishell/releases/tag/v0.1.0

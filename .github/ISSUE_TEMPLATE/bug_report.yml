@@ -45,7 +45,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: ShellAI version
+      label: AiShell version
       description: Output of `ai --version` (or the version in pyproject.toml).
       placeholder: "0.1.0"
     validations:

@@ -34,5 +34,5 @@ jobs:
 
       - name: Smoke-test the CLI
         run: |
-          shellai --version
-          shellai persona list
+          aishell --version
+          aishell persona list

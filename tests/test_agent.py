@@ -4,8 +4,8 @@ import json
 
 import pytest
 
-from shellai.agent import CodingAgent, _extract_json
-from shellai.tools import Toolbox
+from aishell.agent import CodingAgent, _extract_json
+from aishell.tools import Toolbox
 
 
 def test_plain_json():

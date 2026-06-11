@@ -1,6 +1,6 @@
 """Tests for personas (built-in + custom presets)."""
 
-import shellai.personas as personas
+import aishell.personas as personas
 
 
 def test_builtin_personas_present():
