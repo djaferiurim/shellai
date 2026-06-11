@@ -34,5 +34,5 @@ jobs:
 
       - name: Smoke-test the CLI
         run: |
-          aishell --version
-          aishell persona list
+          oshell --version
+          oshell persona list

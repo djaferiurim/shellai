@@ -4,8 +4,8 @@ import json
 
 import pytest
 
-from aishell.agent import CodingAgent, _extract_json
-from aishell.tools import Toolbox
+from oshell.agent import CodingAgent, _extract_json
+from oshell.tools import Toolbox
 
 
 def test_plain_json():

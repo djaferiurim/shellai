@@ -1,13 +1,13 @@
-"""AiShell command-line interface.
+"""oshell command-line interface.
 
 Usage examples
 --------------
-    aishell                       # start an interactive chat
-    aishell "explain async/await" # one-shot question
-    aishell --provider openai --model gpt-4o-mini "summarize this"
-    cat error.log | aishell "what is wrong here?"
-    aishell models                # list available models
-    aishell config set provider openai
+    oshell                       # start an interactive chat
+    oshell "explain async/await" # one-shot question
+    oshell --provider openai --model gpt-4o-mini "summarize this"
+    cat error.log | oshell "what is wrong here?"
+    oshell models                # list available models
+    oshell config set provider openai
 """
 
 from __future__ import annotations
@@ -92,7 +92,7 @@ def _interactive(cfg: Config) -> None:
     persona_note = f" · persona [green]{cfg.persona}[/green]" if cfg.persona else ""
     console.print(
         Panel.fit(
-            f"[bold cyan]AiShell[/bold cyan] v{__version__}  "
+            f"[bold cyan]oshell[/bold cyan] v{__version__}  "
             f"· provider [green]{cfg.provider}[/green] "
             f"· model [green]{cfg.model}[/green]" + persona_note + "\n"
             "Type [bold]/help[/bold] for commands, [bold]/exit[/bold] to quit.",
@@ -149,7 +149,7 @@ def main(
 ) -> None:
     """A fast, beautiful terminal chat for any LLM."""
     if version:
-        console.print(f"AiShell v{__version__}")
+        console.print(f"oshell v{__version__}")
         raise typer.Exit()
 
 
@@ -283,7 +283,7 @@ def agent(
 
     console.print(
         Panel.fit(
-            f"[bold cyan]AiShell Agent[/bold cyan] · {cfg.provider}/{cfg.model}\n"
+            f"[bold cyan]oshell Agent[/bold cyan] · {cfg.provider}/{cfg.model}\n"
             f"workspace: [green]{root}[/green]"
             + ("  [red](--yolo: no confirmations)[/red]" if yolo else "")
             + ("  [cyan](interactive)[/cyan]" if interactive else ""),
@@ -519,7 +519,7 @@ def storyboard(
 
     console.print(
         Panel.fit(
-            f"[bold cyan]AiShell Storyboard[/bold cyan] · {scenes} scenes\n"
+            f"[bold cyan]oshell Storyboard[/bold cyan] · {scenes} scenes\n"
             f"[dim]{brief_text}[/dim]",
             border_style="cyan",
         )
@@ -786,7 +786,7 @@ def config_show() -> None:
 
 @config_app.command("set")
 def config_set(key: str, value: str) -> None:
-    """Set a config value, e.g. `aishell config set provider openai`."""
+    """Set a config value, e.g. `oshell config set provider openai`."""
     cfg = Config.load()
     if not hasattr(cfg, key):
         console.print(f"[red]Unknown key:[/red] {key}")

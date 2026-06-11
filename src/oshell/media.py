@@ -57,7 +57,7 @@ class ImageGenerator:
         if not cfg.openai_api_key:
             raise ValueError(
                 "OpenAI API key not set. Export OPENAI_API_KEY or run "
-                "`aishell config set openai_api_key <key>`."
+                "`oshell config set openai_api_key <key>`."
             )
         self.base_url = cfg.openai_base_url.rstrip("/")
         self.api_key = cfg.openai_api_key
@@ -114,7 +114,7 @@ class VideoGenerator:
         if not cfg.replicate_api_token:
             raise ValueError(
                 "Replicate token not set. Export REPLICATE_API_TOKEN or run "
-                "`aishell config set replicate_api_token <token>`."
+                "`oshell config set replicate_api_token <token>`."
             )
         self.token = cfg.replicate_api_token
         self.model = cfg.video_model

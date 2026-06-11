@@ -2,7 +2,7 @@
 
 import math
 
-from aishell.retrieval import _chunk_text, _cosine
+from oshell.retrieval import _chunk_text, _cosine
 
 
 def test_cosine_identical_vectors():

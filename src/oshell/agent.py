@@ -1,4 +1,4 @@
-"""The AiShell coding agent.
+"""The oshell coding agent.
 
 A small but capable ReAct-style loop: the model is asked to reply with a
 single JSON object describing one action at a time. We execute the action,
@@ -22,7 +22,7 @@ from .tools import TOOL_REFERENCE, Toolbox
 MAX_STEPS = 25
 
 SYSTEM_PROMPT = f"""\
-You are AiShell Agent, an autonomous coding assistant working inside a user's \
+You are oshell Agent, an autonomous coding assistant working inside a user's \
 project directory. You accomplish the user's task by taking ONE action at a \
 time using the available tools.
 

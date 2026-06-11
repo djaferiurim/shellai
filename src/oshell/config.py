@@ -1,9 +1,9 @@
-"""Configuration loading and persistence for AiShell.
+"""Configuration loading and persistence for oshell.
 
 Settings are resolved in this order (highest priority first):
 1. Command-line flags
 2. Environment variables
-3. Config file (~/.config/aishell/config.json on Linux/macOS)
+3. Config file (~/.config/oshell/config.json on Linux/macOS)
 4. Built-in defaults
 """
 
@@ -16,7 +16,7 @@ from pathlib import Path
 
 from platformdirs import user_config_dir
 
-APP_NAME = "aishell"
+APP_NAME = "oshell"
 
 CONFIG_DIR = Path(user_config_dir(APP_NAME))
 CONFIG_PATH = CONFIG_DIR / "config.json"
@@ -48,7 +48,7 @@ class Config:
     image_size: str = "1024x1024"
     video_model: str = "minimax/video-01"
     replicate_api_token: str = ""
-    media_output_dir: str = ""  # empty -> ~/AiShell/media
+    media_output_dir: str = ""  # empty -> ~/oshell/media
 
     @classmethod
     def load(cls) -> "Config":
@@ -68,10 +68,10 @@ class Config:
             cfg.openai_base_url = os.environ["OPENAI_BASE_URL"]
         if os.environ.get("OLLAMA_HOST"):
             cfg.ollama_host = os.environ["OLLAMA_HOST"]
-        if os.environ.get("AISHELL_PROVIDER"):
-            cfg.provider = os.environ["AISHELL_PROVIDER"]
-        if os.environ.get("AISHELL_MODEL"):
-            cfg.model = os.environ["AISHELL_MODEL"]
+        if os.environ.get("OSHELL_PROVIDER"):
+            cfg.provider = os.environ["OSHELL_PROVIDER"]
+        if os.environ.get("OSHELL_MODEL"):
+            cfg.model = os.environ["OSHELL_MODEL"]
         if os.environ.get("REPLICATE_API_TOKEN"):
             cfg.replicate_api_token = os.environ["REPLICATE_API_TOKEN"]
         cfg.anthropic_api_key = os.environ.get(

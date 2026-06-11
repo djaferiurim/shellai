@@ -1,18 +1,18 @@
 <div align="center">
 
-# 🐚 AiShell
+# 🐚 oshell
 
 ### Chat with any LLM, right from your terminal. Local or cloud. Zero config.
 
-[![PyPI](https://img.shields.io/badge/pip-aishell--cli-blue)](https://pypi.org/project/aishell-cli/)
+[![PyPI](https://img.shields.io/badge/pip-oshell-blue)](https://pypi.org/project/oshell/)
 [![Python](https://img.shields.io/badge/python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![CI](https://github.com/djaferiurim/aishell/actions/workflows/ci.yml/badge.svg)](https://github.com/djaferiurim/aishell/actions/workflows/ci.yml)
+[![CI](https://github.com/djaferiurim/oshell/actions/workflows/ci.yml/badge.svg)](https://github.com/djaferiurim/oshell/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 
 **One command. Streaming answers. Markdown rendering. Pipe-friendly. Works offline with [Ollama](https://ollama.com) or online with OpenAI.**
 
-![AiShell demo](demo.gif)
+![oshell demo](demo.gif)
 
 </div>
 
@@ -30,7 +30,7 @@ $ ai "explain monads like I'm five"
 
 ---
 
-## ✨ Why AiShell?
+## ✨ Why oshell?
 
 - 🚀 **Instant** — ask a question without leaving your shell
 - 🤖 **Coding agent** — it can read, write, and run code to finish a task for you
@@ -48,10 +48,10 @@ $ ai "explain monads like I'm five"
 ## 📦 Install
 
 ```bash
-pip install aishell-cli
+pip install oshell
 ```
 
-That's it. You get two commands: `aishell` and the shortcut `ai`.
+That's it. You get two commands: `oshell` and the shortcut `ai`.
 
 ## ⚡ Quickstart
 
@@ -106,7 +106,7 @@ ai models
 
 ## 🤖 Coding agent
 
-AiShell ships with an autonomous **coding agent** that can read your files,write new ones, and run commands to complete a task — all sandboxed to the
+oshell ships with an autonomous **coding agent** that can read your files,write new ones, and run commands to complete a task — all sandboxed to the
 current directory, and asking before each write or command.
 
 ```bash
@@ -148,7 +148,7 @@ ai video "a drone shot flying over a neon cyberpunk city at night"
 ai video -m minimax/video-01 "timelapse of a blooming flower"
 ```
 
-Generated files are saved to your Pictures folder under `aishell/` (configurable
+Generated files are saved to your Pictures folder under `oshell/` (configurable
 via `media_output_dir`).
 
 **Setup**
@@ -195,7 +195,7 @@ ai ask -k 8 "summarize the auth flow"
 
 ## 🪄 Natural-language shell (`ai do`)
 
-Describe what you want; AiShell suggests the exact command and runs it after you
+Describe what you want; oshell suggests the exact command and runs it after you
 confirm.
 
 ```bash
@@ -230,16 +230,16 @@ ai config show
 
 Or use environment variables: `OPENAI_API_KEY`, `OPENAI_BASE_URL`,
 `ANTHROPIC_API_KEY`, `GROQ_API_KEY`, `GEMINI_API_KEY`, `REPLICATE_API_TOKEN`,
-`OLLAMA_HOST`, `AISHELL_PROVIDER`, `AISHELL_MODEL`.
+`OLLAMA_HOST`, `OSHELL_PROVIDER`, `OSHELL_MODEL`.
 
-> 💡 Because AiShell speaks the OpenAI API, you can point `OPENAI_BASE_URL`
+> 💡 Because oshell speaks the OpenAI API, you can point `OPENAI_BASE_URL`
 > at **any** compatible endpoint (Groq, Together, LM Studio, vLLM…).
 
 ## 🛠️ Development
 
 ```bash
-git clone https://github.com/djaferiurim/aishell
-cd aishell
+git clone https://github.com/djaferiurim/oshell
+cd oshell
 pip install -e ".[dev]"
 ai --version
 

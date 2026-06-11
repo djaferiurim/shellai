@@ -1,4 +1,4 @@
-# AiShell demo recording — render with: vhs demo.tape
+# oshell demo recording — render with: vhs demo.tape
 # Install VHS: https://github.com/charmbracelet/vhs
 # Produces demo.gif for the README.
 
@@ -13,7 +13,7 @@ Set TypingSpeed 60ms
 Set Padding 20
 
 # --- intro ---
-Type "# 🐚 AiShell — chat with any LLM from your terminal"
+Type "# 🐚 oshell — chat with any LLM from your terminal"
 Sleep 1s
 Enter
 Sleep 500ms
@@ -41,7 +41,7 @@ Type 'ai index README.md'
 Sleep 500ms
 Enter
 Sleep 4s
-Type 'ai ask "which LLM providers does AiShell support?"'
+Type 'ai ask "which LLM providers does oshell support?"'
 Sleep 800ms
 Enter
 Sleep 9s

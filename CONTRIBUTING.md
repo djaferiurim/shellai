@@ -1,12 +1,12 @@
-# Contributing to AiShell
+# Contributing to oshell
 
-Thanks for your interest in making AiShell better! 🐚
+Thanks for your interest in making oshell better! 🐚
 
 ## Getting started
 
 ```bash
-git clone https://github.com/djaferiurim/aishell
-cd aishell
+git clone https://github.com/djaferiurim/oshell
+cd oshell
 pip install -e ".[dev]"
 pytest          # make sure the suite is green
 ```
@@ -14,7 +14,7 @@ pytest          # make sure the suite is green
 ## Project layout
 
 ```
-src/aishell/
+src/oshell/
   cli.py          # Typer commands & entry point
   config.py       # config loading / persistence
   providers.py    # LLM backends (OpenAI, Ollama, Anthropic, Groq, Gemini)
@@ -39,7 +39,7 @@ tests/            # pytest suite
 
 ## Guidelines
 
-- Keep dependencies minimal — AiShell's appeal is being lightweight.
+- Keep dependencies minimal — oshell's appeal is being lightweight.
 - Match the existing style (type hints, short docstrings, `rich` for output).
 - New network calls should fail gracefully with a clear, actionable message.
 - Anything that writes files or runs commands must respect the approval flow.

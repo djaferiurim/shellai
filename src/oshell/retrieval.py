@@ -165,7 +165,7 @@ def search(query: str, cfg: Config, top_k: int = 5) -> List[Tuple[str, str, floa
     """Return the top_k (source, text, score) matches for ``query``."""
     if not INDEX_PATH.exists():
         raise FileNotFoundError(
-            "No index found. Run `aishell index <folder>` first."
+            "No index found. Run `oshell index <folder>` first."
         )
     store = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
     chunks = store.get("chunks", [])

@@ -1,6 +1,6 @@
 """Tests for storyboard scene parsing and agent conversation state."""
 
-from aishell.storyboard import Scene, _parse_scenes
+from oshell.storyboard import Scene, _parse_scenes
 
 
 def test_parse_clean_json():

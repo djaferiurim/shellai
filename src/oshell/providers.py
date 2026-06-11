@@ -85,7 +85,7 @@ class OpenAICompatibleProvider:
         if not api_key:
             raise ValueError(
                 f"{self.name.title()} API key not set. Export {self._key_hint} or run "
-                f"`aishell config set {self.name}_api_key <key>`."
+                f"`oshell config set {self.name}_api_key <key>`."
             )
         self.base_url = base_url.rstrip("/")
         self.api_key = api_key
@@ -190,7 +190,7 @@ class AnthropicProvider:
         if not cfg.anthropic_api_key:
             raise ValueError(
                 "Anthropic API key not set. Export ANTHROPIC_API_KEY or run "
-                "`aishell config set anthropic_api_key <key>`."
+                "`oshell config set anthropic_api_key <key>`."
             )
         self.api_key = cfg.anthropic_api_key
         self.model = cfg.model if cfg.model else "claude-3-5-sonnet-latest"

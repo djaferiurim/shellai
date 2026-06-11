@@ -1,7 +1,7 @@
 """Named personas (system-prompt presets).
 
 Built-in personas live here; users can add their own with
-``aishell persona add <name> "<system prompt>"`` which writes to a small JSON
+``oshell persona add <name> "<system prompt>"`` which writes to a small JSON
 file next to the config.
 """
 

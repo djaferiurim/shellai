@@ -1,5 +1,5 @@
 name: Feature request
-description: Suggest an idea for AiShell
+description: Suggest an idea for oshell
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
@@ -14,7 +14,7 @@ body:
     id: solution
     attributes:
       label: Proposed solution
-      description: What would you like AiShell to do?
+      description: What would you like oshell to do?
     validations:
       required: true
   - type: textarea

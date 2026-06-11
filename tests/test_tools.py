@@ -2,7 +2,7 @@
 
 import pytest
 
-from aishell.tools import Toolbox
+from oshell.tools import Toolbox
 
 
 def _approve_all(summary, detail):

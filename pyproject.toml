@@ -1,5 +1,5 @@
 [project]
-name = "aishell-cli"
+name = "oshell"
 version = "0.1.1"
 description = "A fast, beautiful terminal chat for any LLM — OpenAI or local Ollama. Zero config."
 readme = "README.md"
@@ -29,19 +29,19 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/djaferiurim/aishell"
-Issues = "https://github.com/djaferiurim/aishell/issues"
+Homepage = "https://github.com/djaferiurim/oshell"
+Issues = "https://github.com/djaferiurim/oshell/issues"
 
 [project.scripts]
-aishell = "aishell.cli:main_entry"
-ai = "aishell.cli:main_entry"
+oshell = "oshell.cli:main_entry"
+ai = "oshell.cli:main_entry"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/aishell"]
+packages = ["src/oshell"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

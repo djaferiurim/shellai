@@ -2,8 +2,8 @@
 
 import pytest
 
-from aishell.config import Config
-from aishell.providers import (
+from oshell.config import Config
+from oshell.providers import (
     AnthropicProvider,
     GeminiProvider,
     GroqProvider,

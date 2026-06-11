@@ -2,8 +2,8 @@
 
 import json
 
-import aishell.config as config_module
-from aishell.config import Config
+import oshell.config as config_module
+from oshell.config import Config
 
 
 def test_defaults():
@@ -18,7 +18,7 @@ def test_load_from_file(tmp_path, monkeypatch):
     cfg_path.write_text(json.dumps({"provider": "openai", "model": "gpt-4o"}))
     monkeypatch.setattr(config_module, "CONFIG_PATH", cfg_path)
     # Clear any env that could interfere.
-    for var in ("AISHELL_PROVIDER", "AISHELL_MODEL", "OPENAI_API_KEY"):
+    for var in ("OSHELL_PROVIDER", "OSHELL_MODEL", "OPENAI_API_KEY"):
         monkeypatch.delenv(var, raising=False)
 
     cfg = Config.load()
@@ -30,7 +30,7 @@ def test_env_overrides_file(tmp_path, monkeypatch):
     cfg_path = tmp_path / "config.json"
     cfg_path.write_text(json.dumps({"provider": "openai"}))
     monkeypatch.setattr(config_module, "CONFIG_PATH", cfg_path)
-    monkeypatch.setenv("AISHELL_PROVIDER", "groq")
+    monkeypatch.setenv("OSHELL_PROVIDER", "groq")
     monkeypatch.setenv("GROQ_API_KEY", "gsk_test")
 
     cfg = Config.load()

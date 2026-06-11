@@ -22,6 +22,6 @@ htmlcov/
 .idea/
 .DS_Store
 
-# AiShell local data (in case run from repo)
+# oshell local data (in case run from repo)
 sessions/
 config.json
