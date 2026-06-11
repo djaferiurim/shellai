@@ -1,6 +1,6 @@
 [project]
 name = "aishell-cli"
-version = "0.1.0"
+version = "0.1.1"
 description = "A fast, beautiful terminal chat for any LLM — OpenAI or local Ollama. Zero config."
 readme = "README.md"
 requires-python = ">=3.9"

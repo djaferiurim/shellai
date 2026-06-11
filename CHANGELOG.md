@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-06-12
+
+### Changed
+- Renamed the project to **AiShell**; the PyPI distribution is now
+  `aishell-cli` (install with `pip install aishell-cli`).
+- CLI commands are now `aishell` and the shortcut `ai`.
+- Environment variables renamed to `AISHELL_PROVIDER` / `AISHELL_MODEL`.
+- Repository moved to https://github.com/djaferiurim/aishell.
+
 ## [0.1.0] - 2026-06-11
 
 ### Added
@@ -29,5 +38,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Test suite (pytest), GitHub Actions CI matrix, PyPI publish workflow, demo
   tape, and contributing guide.
 
-[Unreleased]: https://github.com/djaferiurim/aishell/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/djaferiurim/aishell/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/djaferiurim/aishell/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/djaferiurim/aishell/releases/tag/v0.1.0
